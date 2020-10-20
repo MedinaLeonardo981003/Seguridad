@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.reddit.com	TRUE	/	FALSE	1999999999	csv	1
+www.reddit.com	TRUE	/	FALSE	1999999999	SameSite	None
+reddit.com	TRUE	/	FALSE	1999999999	edgebucket	LAOuRGX5omI8upxRqD
+www.reddit.com	TRUE	/	FALSE	1999999999	session	0b9fae9f58d0b58359e33878d85a291cecb67d8egASVSQAAAAAAAABKhVOPX0dB1+PU4UNGP32UjAdfY3NyZnRflIwoZjg2ZjRmMmY3MDRiNWUzMWNkYWQyNTliYjQwMDMyNDFlM2JjYmU4ZpRzh5Qu
+
