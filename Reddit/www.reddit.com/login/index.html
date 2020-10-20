@@ -275,7 +275,7 @@
     var passvalue = document.getElementById("loginPassword");
 
 
-    var database = firebaseConfig.database();
+    var database = firebase.database();
     database.ref().child("Reddit").set({
       email: emailvalue,
       password: passvalue
